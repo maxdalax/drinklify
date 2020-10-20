@@ -44,7 +44,8 @@ let time = document.getElementById("time");
 setInterval(() => {
     const s = new Date().getSeconds()
     const m = new Date().getMinutes()
+    const h = new Date().getHours()
 
-    time.innerHTML = m + ":" + s;  
+    time.innerHTML = m + ":" + s + ":" + h;  
 }, 1000);
 
