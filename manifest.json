@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Drinklify",
+  "description": "This extension remind you to drink water ",
+  "version": "1.0",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "notifications"
+
+  ]
+  
+}
