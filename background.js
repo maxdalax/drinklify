@@ -1,3 +1,5 @@
+
+/*
 chrome.runtime.onInstalled.addListener(function() {
   setInterval(function(){
     chrome.notifications.create( //FÖrstå chrome.notifications.create
@@ -12,3 +14,4 @@ chrome.runtime.onInstalled.addListener(function() {
       })
   }, 5000)
 });
+*/
