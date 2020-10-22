@@ -8,7 +8,7 @@ setInterval(() => {
     time.innerHTML = h + ":" + m + ":" + s;  
 }, 1000);
 
-let options = {
+var options = {
     type: "Basic",
     title: "My First Popup with Chrome",
     message: "Jacob suger",
