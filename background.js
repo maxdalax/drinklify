@@ -10,5 +10,5 @@ chrome.runtime.onInstalled.addListener(function() {
       function(){
 
       })
-  }, 50000000)
+  }, 5000)
 });
