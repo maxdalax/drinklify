@@ -1,6 +1,6 @@
 chrome.runtime.onInstalled.addListener(function() {
   setInterval(function(){
-    chrome.notifications.create(
+    chrome.notifications.create( //FÖrstå chrome.notifications.create
       "DrickVatten", ----
       {
         type: 'basic',

@@ -46,6 +46,6 @@ setInterval(() => {
     const m = new Date().getMinutes()
     const h = new Date().getHours()
 
-    time.innerHTML = m + ":" + s + ":" + h;  
+    time.innerHTML = h + ":" + m + ":" + s;  
 }, 1000);
 
