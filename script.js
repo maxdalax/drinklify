@@ -9,7 +9,7 @@ setInterval(() => {
 }, 1000);
 
 var options = {
-    type: "Basic",
+    type: "basic",
     title: "My First Popup with Chrome",
     message: "Jacob suger",
     icon: "icon.png"
