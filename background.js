@@ -40,7 +40,7 @@ chrome.alarms.onAlarm.addListener(function (alarm) {
 });
 
 function createAlarm() {
-  chrome.alarms.create("drink water", { delayInMinutes: defaultDuration });
+  chrome.alarms.create("drink water", { periodInMinutes: defaultDuration });
 }
 
 createAlarm()
