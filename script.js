@@ -1,4 +1,4 @@
-let time = document.getElementById("time");
+/*let time = document.getElementById("time");
 
 setInterval(() => {
     const s = new Date().getSeconds()
@@ -6,19 +6,34 @@ setInterval(() => {
     const h = new Date().getHours()
 
     time.innerHTML = h + ":" + m + ":" + s;  
-}, 1000);
 
-var options = {
-    type: "basic",
-    title: "My First Popup with Chrome",
-    message: "Jacob suger",
-    icon: "icon.png"
-};
+    /*if(s % 2 == 0){
+       
+            chrome.runtime.sendMessage('', {
+              type: 'notification',
+              options: {
+                title: 'Just wanted to notify you',
+                message: 'How great it is!',
+                iconUrl: '/icon.png',
+                type: 'basic'
+              }
+            
+          });           
+    }
+}, 1000); 
+*/
 
-chrome.notification.create(options, callback);
+document.getElementById("add").addEventListener("click", remind);
 
-console.log("Klar?");
+function remind(){
+  const minutes = parseInt(document.getElementById("num").value);
 
-function callback(){
-    console.log("Popup done!");
+  if(isNaN(minutes)){
+    console.log("It's not a number");
+  }else{
+    console.log(minutes);
+    chrome.runtime.sendMessage({minutes}, function(response) {
+      console.log(response);
+    });
+  }
 }
