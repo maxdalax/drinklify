@@ -1,28 +1,3 @@
-
-/*
-chrome.runtime.onInstalled.addListener(function() {
-  setInterval(function(){
-    chrome.notifications.create( //FÖrstå chrome.notifications.create
-      "DrickVatten", ----
-      {
-        type: 'basic',
-        title:"drick vatten",
-        message:"Drick drick"
-      },
-      function(){
-
-      })
-  }, 5000)
-});
-*/
-/*
-chrome.runtime.onMessage.addListener(data => {
-  if (data.type === 'notification') {
-    chrome.notifications.create('', data.options);
-  }
-});
-*/
-
 console.log("in background script")
 
 let defaultDuration = 1.0;
