@@ -1,6 +1,6 @@
 console.log("in background script")
 
-let defaultDuration = 1.0;
+let defaultDuration = 60.0;
 
 chrome.alarms.onAlarm.addListener(function (alarm) {
   console.log(alarm)
@@ -23,7 +23,7 @@ createAlarm()
 chrome.runtime.onMessage.addListener(
   function (request, sender, sendResponse) {
     console.log("Event recieved in background page");
-    defaultDuration = request.minutes * 1.0;
+    defaultDuration = request.minutes * 60.0;
     createAlarm()
     sendResponse({ success: true });
   });
