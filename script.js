@@ -1,5 +1,3 @@
-document.getElementById("add").addEventListener("click", remind);
-
 function remind(){
   const minutes = parseInt(document.getElementById("num").value);
 

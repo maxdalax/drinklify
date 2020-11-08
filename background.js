@@ -8,7 +8,7 @@ chrome.alarms.onAlarm.addListener(function (alarm) {
     type: "basic",
     iconUrl: "icon.png",
     title: "Drink Water",
-    "message": "Dumy notifications"
+    "message": "Time to drink!"
   }, function (notificationID) {
     console.log("displayed the notification")
   })
