@@ -73,7 +73,7 @@ article{
     width: 120px;
     background-color: black;
     color: white;
-    padding: 5px 0px;
+    padding: 5px 10px;
     text-align: center;
     border-radius: 8px;
     display: block;
@@ -91,7 +91,7 @@ article{
     top: -5px;
     background: black;
     z-index: -1;
-    left: 50%;
+    right: 50%;
     transform: translateX(-50%) rotate(45deg);
 }
 
