@@ -18,6 +18,7 @@ header{
     grid-template-rows: 1fr;
     justify-content: center;
     justify-items: center;
+    padding-top: 10px;
 }
 
 a:link, a:visited {
